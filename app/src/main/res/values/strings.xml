@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">PersonalToDo2</string>
+    <string name="empty_view_title_text">Your list is empty</string>
+    <string name="empty_view_subtitle_text">Get started by adding a task</string>
+    <!-- Name for the application [CHAR LIMIT=12] -->
+
+    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">"Delete all to-do's"</string>
+
+    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_task">Add a task</string>
+
+    <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_task">Task:</string>
+
+    <!-- Label for gender information in the editor [CHAR LIMIT=30] -->
+    <string name="category_priority">Priority:</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_measurement">Measurement:</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_add_task">Add a task</string>
+
+    <!-- Text hint for breed field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_add_due_date">Add due date (optional)</string>
+
+
+    <string name="editor_insert_task_successful">Task saved</string>
+
+    <!-- Toast message in editor when new pet has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_task_failed">Error with saving task</string>
+
+    <string name="editor_update_task_failed">Unable to update task</string>
+    <string name="editor_update_task_successful">Update successful</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_task_successful">Task deleted</string>
+
+    <!-- Toast message in editor when current pet has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_task_failed">Error with deleting task</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current pet [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this task?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current pet [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current pet [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current pet [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_all_alert_dialog">"Delete all to-do's?"</string>
+    <string name="unknown_breed">Unknown Breed</string>
+    <string name="category_due_date">Due date:</string>
+    <string name="category_status">Status:</string>
+    <string name="button_in_progress">In Progress</string>
+    <string name="button_completed">Completed</string>
+    <string name="category_notes">Notes:</string>
+    <string name="hint_add_notes">Add your notes</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>    <string name="priority_critical">Critical</string>
+    <string name="editor_activity_title_edit_task">Edit task</string>
+    <string name="title_main_screen">My to-do list</string>
+</resources>
