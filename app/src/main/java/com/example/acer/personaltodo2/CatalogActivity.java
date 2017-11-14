@@ -25,7 +25,7 @@ import android.widget.ListView;
 
 import static com.example.acer.personaltodo2.data.TaskContract.*;
 
-public class CatalogActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>, TaskCursorAdapter.ListItemClickListener {
+public class CatalogActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>,TaskCursorAdapter.ListItemClickListener {
 
     //Member variables
     private TaskCursorAdapter mCursorAdapter;
@@ -61,7 +61,7 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
 
         // Setup an Adapter to create a list item for each row of pet data in the Cursor.
         // There is no task data yet (until the loader finishes) so pass in null for the Cursor.
-        mCursorAdapter = new TaskCursorAdapter(this, this);
+        mCursorAdapter = new TaskCursorAdapter(this,this);
         mRecyclerView.setAdapter(mCursorAdapter);
 
 
@@ -176,8 +176,9 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         mCursorAdapter.swapCursor(null);
     }
 
+
     @Override
-    public void onListItemClicked(long clickedItemIndex) {
+    public void onListItemClick(int id) {
         // Create new intent to go to {@link EditorActivity}
         Intent intent = new Intent(CatalogActivity.this, EditorActivity.class);
 
@@ -186,15 +187,14 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         // {@link PetEntry#CONTENT_URI}.
         // For example, the URI would be "content://com.example.android.pets/pets/2"
         // if the pet with ID 2 was clicked on.
+        Log.e("I AM THE ONE YOU SEEK",""+ ContentUris.withAppendedId(TaskEntry.CONTENT_URI, id));
 
-        Uri currentPetUri = ContentUris.withAppendedId(TaskEntry.CONTENT_URI, clickedItemIndex + 1);
-        Log.i("HERE", "" + currentPetUri);
+        Uri currentPetUri = ContentUris.withAppendedId(TaskEntry.CONTENT_URI, id);
+
         // Set the URI on the data field of the intent
         intent.setData(currentPetUri);
 
         // Launch the {@link EditorActivity} to display the data for the current pet.
         startActivity(intent);
     }
-
-
 }
